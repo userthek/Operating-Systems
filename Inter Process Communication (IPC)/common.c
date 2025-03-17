@@ -151,7 +151,7 @@ SharedMemory* sharedMemSetup() {
         exit(EXIT_FAILURE);
     }
 
-    //we iniria;ize the fields of the sharedMem structure
+    //we initialize the fields of the sharedMem structure
     sharedMem->activeChildIndx = -1; //at start no child exists
     sharedMem->endsInTimestamp = -1;   //no termination timestamp by default
     memset(sharedMem->sharedSpace, 0, sizeof(sharedMem->sharedSpace)); //cleanup
